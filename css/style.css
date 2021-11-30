@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.header {
+  height: 100px;
+  background-color: aquamarine;
+  width: 500px;
+}
+/*# sourceMappingURL=style.css.map */

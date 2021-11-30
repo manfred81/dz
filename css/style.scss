@@ -1,0 +1,18 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+.header {
+height: 100px;
+background-color: aquamarine;
+width: $width-site;
+
+}
