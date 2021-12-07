@@ -314,8 +314,15 @@ h3 {
   font-size: 16px;
   line-height: 19px;
   padding: 15px 39px;
-  background-color: transparent;
   display: inline-block;
+}
+
+.goods-home .goods-button:hover {
+  background-color: #F16D7F;
+  border-radius: 1px #FF6A6A;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .offer {
@@ -324,7 +331,8 @@ h3 {
 
 .offer .offer-blok {
   list-style: none;
-  height: 341px;
+  padding-top: 104px;
+  padding-bottom: 104px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,6 +409,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -507,6 +517,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -530,5 +542,58 @@ h3 {
   width: 148px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.footer .social-link-f {
+  background-image: url(../img/f.svg);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-link-i {
+  background-image: url(../img/i.svg);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-link-i:hover {
+  background-image: url(../img/i-2.svg);
+  background-color: #F16D7F;
+}
+
+.footer .social-link-p {
+  background-image: url(../img/p.svg);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-link-t {
+  background-image: url(../img/t.svg);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
