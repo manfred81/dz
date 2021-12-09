@@ -430,9 +430,11 @@ padding-bottom: 18px;
     .social {
         list-style: none;
         display: flex;
-        width: 148px;
-        justify-content: space-around;        
+       gap: 8px;        
         }
+    .social-items {
+       
+    }    
     .social-link-f {
           background-image: url(../img/f.svg);
           width: 32px;
