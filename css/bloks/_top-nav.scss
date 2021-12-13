@@ -41,7 +41,7 @@
   &[href]:hover {
     text-decoration: underline;
     color: #F16D7F;
-    transform: 1s;
+    transition: 1s;
   }
 }
 .top-nav-link-current {
