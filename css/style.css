@@ -55,6 +55,8 @@
 .top-nav-link[href]:hover {
   text-decoration: underline;
   color: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .top-nav-link-current {
@@ -192,6 +194,7 @@ h3 {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .header {
