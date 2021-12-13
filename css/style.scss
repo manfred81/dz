@@ -1,4 +1,8 @@
+@import 'bloks/top-nav';
+@import 'bloks/filtr-cotalog';
+
 $coler-main:#F16D7F;
+
 * {
     margin: 0;
     padding: 0;
@@ -43,12 +47,13 @@ h3 {
     margin-left: -99999999px;
     width: 1px;
     height: 1px;
-    margin: -1px;
+   
 }
+// контейнер
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    outline: 1px solid red;
+    
 }
 .header {
 height: 75px;
@@ -101,6 +106,7 @@ padding-bottom: 18px;
     height: 764px;
     background-image: url(../img/top_foto.png);
     background-repeat: no-repeat;
+ 
     display: flex; 
     align-items: center;
     justify-content: flex-end;
@@ -147,7 +153,10 @@ padding-bottom: 18px;
 }    
 .centr-bottom {
     width: 100%;
-     margin-top: 30px;
+    margin-top: 30px;
+}
+.centr-foto {
+    width: 100%;
 }
 .centr-blok1 {
     position: relative;
@@ -421,5 +430,36 @@ padding-bottom: 18px;
         background-color: $coler-main;       
         }
     }
-    
-  
+ .video-promo {
+    margin-bottom: 25px;
+ }
+ .pagination {
+    width: 284px;
+    height: 44px;
+    outline: 1px solid #E5E5E5;
+    margin-top: 48px;
+ }
+ .pagination-list {
+    display: flex;
+    padding: 15px 0px;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-around;
+ }   
+.pagination-icon {
+    fill: #000000;
+}
+.pagination-link {
+    background:none;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #C4C4C4;
+}
+.pagination-link--activ {
+    color: $coler-main;
+}
+.pagination-link--separator {
+    margin: 0 -20px;
+}
