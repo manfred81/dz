@@ -1,27 +1,23 @@
 .top-nav {
     background-color: #F8F3F4;
-    margin-bottom: 51px;
-}
-.top-nav-centr {
+
+&-centr {
     display: flex;
     align-items: center;
     height: 148px;
     justify-content: space-between;
 }
-.top-nav-blok {
-    
-}
-.top-nav-heiding {
+&-heiding {
     color: #F16D7F;
     font-size: 24px;
     line-height: 29px;
     font-weight: 400;
 }
-.top-nav-meny {
+&-meny {
     display: flex;
     gap: 20px;
 }
-.top-nav-list {
+&-list {
     list-style: none;
     &::before {
         content: '/';
@@ -31,7 +27,7 @@
         display: none;
       }    
     }
-.top-nav-link {
+&-link {
     text-decoration: none;
     color: #636363;
     text-transform: uppercase;
@@ -44,7 +40,8 @@
     transition: 0.3s;
   }
 }
-.top-nav-link-current {
+&-link-current {
     font-weight: bold;
     color: #F16D7F;
+}
 }
