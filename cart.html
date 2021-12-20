@@ -19,6 +19,7 @@
 
     <!-- шапка начало -->
     <header class="header">
+
         <div class="header-meny container ">
 
             <div class="meny-left">
@@ -27,12 +28,35 @@
             </div>
 
             <div class="meny-right">
-                <button class="meny-right-meny link-stayl-button">
-                    <svg class="fill-meny" width="32" height="23" viewBox="0 0 32 23"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
-                    </svg>
-                </button>
+                <div class="meny-right-cart">
+                    <nav class="header-burger">
+                        <button class="card__close-menu">X</button>
+                        <p class="header-burger-text">Menu</p>
+                        <ul class="header-burger-category">
+                            <li class="header-burger-group">MEN
+                            <li class="header-burger-section"><a class="header-burger-group-link link-stayl-none"
+                                    href="#">Accessories</a>
+                            </li>
+                            <li class="header-burger-section"><a class="header-burger-group-link link-stayl-none"
+                                    href="#">Bags</a>
+                            </li>
+                            <li class="header-burger-section"><a class="header-burger-group-link link-stayl-none"
+                                    href="#">Denim</a>
+                            </li>
+                            <li class="header-burger-section"><a class="header-burger-group-link link-stayl-none"
+                                    href="#">T-Shirts</a>
+                            </li>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <button class="meny-right-meny link-stayl-button">
+                        <svg class="fill-meny" width="32" height="23" viewBox="0 0 32 23"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                        </svg>
+                    </button>
+                </div>
                 <a class="meny-right-user link-stayl-none" href="#">
                     <svg class="fill-user" width="29" height="29" viewBox="0 0 29 29"
                         xmlns="http://www.w3.org/2000/svg">
@@ -58,15 +82,61 @@
                 <p class="top-nav-heiding">SHOPPING CART</p>
             </div>
         </section>
-        <section class="choice container">
-            <div class="choice-cart-blok">
-                <div class="choice-cart"></div>
-                <div class="choice-cart"></div>
-                <div class="choice-cart-button"></div>
-            </div>
+        <section class="choice-container container">
+            <h2 class="text-none">Выбор товара</h2>
+            <section class="choice">
+                <div class="choice-card">
+                    <img class="choice-card__img" width="262" height="306" src="img/home3.png" alt="home3">
+                    <div class="choice-card__blok">
+                        <h3 class="choice__name">MANGO PEOPLE T-SHIRT</h3>
+                        <p class="choice-card__item">Price: <span class="choice-card__item_price">$300</span> </p>
+                        <p class="choice-card__item">Color: Red </p>
+                        <p class="choice-card__item">Size: Xl </p>
+                        <p class="choice-card__item">Quantity:
+                            <input value="1" min="1" max="10" class="choice-card__quantity" type="number">
+                        </p>
+                    </div>
+                    <button class="card__close">X</button>
+                </div>
+                <div class="choice-card">
+                    <img class="choice-card__img" width="262" height="306" src="img/home7.png" alt="home7">
+                    <div class="choice-card__blok">
+                        <h3 class="choice__name">MANGO PEOPLET-SHIRT</h3>
+                        <p class="choice-card__item">Price: <span class="choice-card__item_price">$300</span></p>
+                        <p class="choice-card__item">Color: Red </p>
+                        <p class="choice-card__item">Size: Xl </p>
+                        <p class="choice-card__item">Quantity:
+                            <input value="1" min="1" max="10" class="choice-card__quantity" type="number">
+                        </p>
+                    </div>
+                    <button class="card__close">X</button>
+                </div>
+                <div class="choice-button-blok">
+                    <button class="choice-btn">CLEAR SHOPPING CART</button>
+                    <button class="choice-btn">CONTINUE SHOPPING</button>
+                </div>
+            </section>
             <div class="choice-form">
-                <div class="choice-form-order"></div>
-                <div class="choice-form-ordering"></div>
+                <form action="#" class="shipping-form">
+                    <p class="shipping-form-text">SHIPPING ADRESS</p>
+                    <input type="text" class="shipping-form__field" placeholder="Bangladesh" disabled>
+                    <input type="text" class="shipping-form__field" placeholder="State">
+                    <input type="text" class="shipping-form__field" placeholder="Postcode / Zip">
+                    <input type="submit" class="shipping-form__button" value="GET A QUOTE">
+                </form>
+                <div class="choice-order">
+
+                    <p class="choice-order-text choice-order-text-min">SUB TOTAL &emsp; $900</p>
+                    <p class="choice-order-text choice-order-text-big">GRAND TOTAL&emsp; <span
+                            class="choice-order-text-price">$900</span></p>
+
+                    <div class="choice-centr"><svg width="275" height="1" viewBox="0 0 275 1" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M275 0H0V1H275V0Z" fill="#E2E2E2" />
+                        </svg>
+                        <button class="choice-order-btn">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="offer">

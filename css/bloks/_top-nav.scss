@@ -1,5 +1,18 @@
 .top-nav {
-    background-color: #F8F3F4;
+    background: linear-gradient(-45deg, #F8F3F4, #ffc6dc9f, #F8F8F8, #ffffffef);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+     @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+     }
 
 &-centr {
     display: flex;
