@@ -1,60 +1,69 @@
 .top-nav {
-    background: linear-gradient(-45deg, #F8F3F4, #ffc6dc9f, #F8F8F8, #ffffffef);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-     @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-     }
+  background: linear-gradient(-45deg, #f8f3f4, #ffc6dc9f, #f8f8f8, #ffffffef);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
-&-centr {
+  &-centr {
     display: flex;
     align-items: center;
     height: 148px;
     justify-content: space-between;
-}
-&-heiding {
-    color: #F16D7F;
+    @media (max-width: 815px) {
+      justify-content: center;
+      flex-direction: column;
+      justify-content: start;
+    }
+  }
+  &-heiding {
+    color: #f16d7f;
     font-size: 24px;
     line-height: 29px;
     font-weight: 400;
-}
-&-meny {
+    @media (max-width: 815px) {
+      padding-top: 24px;
+      padding-bottom: 32px;
+    }
+  }
+  &-meny {
     display: flex;
     gap: 20px;
-}
-&-list {
+  }
+  &-list {
     list-style: none;
     &::before {
-        content: '/';
-        margin-right: 10px;
+      content: "/";
+      margin-right: 10px;
     }
     &:first-child::before {
-        display: none;
-      }    
+      display: none;
     }
-&-link {
+  }
+  &-link {
     text-decoration: none;
     color: #636363;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 17px; 
+    line-height: 17px;
     font-weight: 300;
-  &[href]:hover {
-    text-decoration: underline;
-    color: #F16D7F;
-    transition: 0.3s;
+    &[href]:hover {
+      text-decoration: underline;
+      color: #f16d7f;
+      transition: 0.3s;
+    }
   }
-}
-&-link-current {
+  &-link-current {
     font-weight: bold;
-    color: #F16D7F;
-}
+    color: #f16d7f;
+  }
 }
