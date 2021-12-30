@@ -43,6 +43,7 @@
 .filter-icon-text {
   color: #0e0c0c;
   margin-right: 9px;
+  cursor: pointer;
   &-color {
     color: #6f6e6e;
   }
@@ -100,6 +101,12 @@
     padding-right: 0px;
     justify-content: end;
   }
+}
+.filter-content {
+  position: absolute;
+  background-color: #ffffff;
+  width: 360px;
+  margin-top: 10px;
 }
 .filter-sorting-container {
   width: 360px;
@@ -225,7 +232,7 @@
   font-size: 14px;
   line-height: 16px;
 }
-.fiter-content-size summary {
+.filter-content-size summary {
   position: absolute;
   width: 79px;
   background-color: #ffffff;
@@ -234,7 +241,7 @@
   z-index: 1;
   list-style: none;
 }
-.fiter-content-size-product {
+.filter-content-size-product {
   position: absolute;
   display: flex;
   background-color: #ffffff;
@@ -244,6 +251,7 @@
   z-index: 1;
   padding: 15px;
   flex-direction: column;
+  margin-top: 10px;
 }
 .size-checkbox {
   display: inline-flex;

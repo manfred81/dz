@@ -76,8 +76,8 @@ h3 {
   }
 }
 .header-burger {
-  z-index: 1;
-  width: 100%;
+  z-index: 3;
+
   right: 0px;
   top: 76px;
   position: absolute;
@@ -244,7 +244,7 @@ h3 {
     }
   }
   &-img {
-    width: 50%;
+    max-width: 50%;
   }
   &-container-text {
     margin-right: 90px;
@@ -315,11 +315,11 @@ h3 {
     }
   }
   &-bottom {
-    width: 100%;
+    max-width: 100%;
     margin-top: 30px;
   }
   &-foto {
-    width: 100%;
+    max-width: 100%;
   }
   &-blok {
     background-color: #ffffff;
@@ -389,7 +389,7 @@ h3 {
 .centr-blok-text {
   color: #ffffff;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
   transition: 0.6s;
   &:hover {
     transform: scale(1.5);
@@ -442,7 +442,7 @@ h3 {
   }
   &-kart {
     background: #f8f8f8;
-    width: 360px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
   }
@@ -539,7 +539,7 @@ h3 {
 }
 .background-goods {
   background: #f7e4e2;
-  width: 360px;
+  max-width: 360px;
   height: 420px;
   margin-bottom: 25px;
   text-align: center;
@@ -592,7 +592,7 @@ h3 {
     }
 
     &--content {
-      width: 360px;
+      max-width: 360px;
       height: 133px;
       display: flex;
       flex-direction: column;
@@ -657,7 +657,7 @@ h3 {
   &-form {
     text-align: center;
     color: #222224;
-    width: 557px;
+    max-width: 557px;
     &--subscribe {
       font-size: 24px;
       font-weight: 700;
@@ -679,7 +679,7 @@ h3 {
 }
 .comment {
   text-align: center;
-  width: 360px;
+  max-width: 360px;
   height: 225px;
   &-sub {
     margin-bottom: 20px;
@@ -697,14 +697,14 @@ h3 {
 }
 
 .subscribe-field {
-  padding: 22px;
+  padding: 22px 10px 22px 20px;
   background-color: #e1e1e1;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   color: #000000;
   border: none;
   outline: none;
-  width: 256px;
+  max-width: 256px;
 
   &::placeholder {
     color: #222224;
@@ -723,7 +723,7 @@ h3 {
   }
 }
 .footer {
-  width: 100%;
+  max-width: 100%;
   background: #222224;
   height: 80px;
   @media (max-width: $mobail) {
@@ -779,7 +779,7 @@ h3 {
   margin-bottom: 25px;
 }
 .pagination {
-  width: 284px;
+  max-width: 284px;
   height: 44px;
   outline: 1px solid #e5e5e5;
   margin-top: 60px;
@@ -826,18 +826,43 @@ h3 {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  height: 777px;
+
+  position: relative;
+
+  @media (max-width: $mobail) {
+  }
+  &-img {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 40px;
+    @media (max-width: $mobail) {
+      padding-bottom: 0px;
+    }
+    @media (max-width: $mobail) {
+      position: relative;
+    }
+  }
   &--button-left {
     width: 47px;
     height: 47px;
     background-color: rgba(42, 42, 42, 0.15);
     border: none;
+    @media (max-width: $mobail) {
+      position: absolute;
+      z-index: 1;
+    }
   }
   &--button-riht {
     width: 47px;
     height: 47px;
     background-color: rgba(42, 42, 42, 0.15);
     border: none;
+    @media (max-width: $mobail) {
+      position: absolute;
+      right: 0px;
+      z-index: 1;
+    }
   }
 }
 .product-button:hover {
@@ -854,6 +879,14 @@ h3 {
   margin-bottom: calc(130px - 64px);
 
   transform: translateY(-64px);
+  @media (max-width: $tablet) {
+    transform: none;
+    border: none;
+  }
+  @media (max-width: $mobail) {
+    margin-bottom: 0px;
+  }
+
   &-link {
     color: $coler-main;
     display: flex;
@@ -886,10 +919,13 @@ h3 {
     color: #5e5e5e;
     font-size: 14px;
     line-height: 17px;
+    @media (max-width: $mobail) {
+      line-height: 20px;
+    }
   }
   &-blok {
     display: inline-block;
-    width: 555px;
+    max-width: 555px;
     margin-bottom: 32px;
     text-align: center;
   }
@@ -897,6 +933,9 @@ h3 {
     fill: #eaeaea;
     font-size: 1.01px;
     margin-bottom: 65px;
+    @media (max-width: $mobail) {
+      display: none;
+    }
     &:hover {
       fill: #ef5b70;
     }
@@ -907,6 +946,9 @@ h3 {
     font-weight: 300;
     color: #ef5b70;
     margin-bottom: 65px;
+    @media (max-width: $mobail) {
+      margin-bottom: 81px;
+    }
   }
   &-btn {
     margin-top: 49px;
@@ -925,6 +967,10 @@ h3 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @media (max-width: $mobail) {
+      margin-top: 64px;
+    }
+
     &:hover {
       background-color: $coler-main;
       border-radius: 1px;
@@ -953,6 +999,10 @@ h3 {
   margin-top: 96px;
   margin-bottom: 128px;
   flex-wrap: wrap;
+  justify-content: center;
+  @media (max-width: $mobail) {
+    margin-bottom: 96px;
+  }
 }
 .choice__name {
   margin-bottom: 62px;
@@ -960,9 +1010,15 @@ h3 {
   color: #222222;
   font-size: 24px;
   line-height: 29px;
+  @media (max-width: $mobail) {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+    margin-right: 53px;
+  }
 }
 .choice-card {
-  width: 652px;
+  max-width: 652px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -970,9 +1026,29 @@ h3 {
   position: relative;
   margin-bottom: 40px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  @media (max-width: $tablet) {
+    max-width: 734px;
+    height: 306px;
+    padding-right: 0px;
+  }
+  @media (max-width: $mobail) {
+    max-width: 358px;
+    height: 188px;
+    margin-bottom: 30px;
+  }
   &__blok {
     margin-top: 28px;
     margin-left: 33px;
+    margin-right: 97px;
+    @media (max-width: $tablet) {
+      margin-right: 179px;
+    }
+    @media (max-width: $mobail) {
+      margin-top: 13px;
+      margin-left: 17px;
+      margin-bottom: 37px;
+      margin-right: 0px;
+    }
   }
   &__quantity {
     @include button-style;
@@ -980,6 +1056,17 @@ h3 {
     width: 44px;
     height: 24px;
     text-align: center;
+    color: #656565;
+    margin-left: 24px;
+    padding-left: 8px;
+    @media (max-width: $mobail) {
+      max-width: 30px;
+      height: 15px;
+      font-size: 10px;
+      line-height: 12px;
+      margin-left: 15px;
+      padding-left: 0px;
+    }
   }
   &__item {
     margin-bottom: 6px;
@@ -987,6 +1074,12 @@ h3 {
     font-size: 22px;
     line-height: 26px;
     color: #656565;
+    @media (max-width: $mobail) {
+      margin-bottom: 4px;
+
+      font-size: 14px;
+      line-height: 17px;
+    }
     &_price {
       color: $coler-main;
     }
@@ -1000,22 +1093,30 @@ h3 {
   background-color: transparent;
   color: #575757;
   cursor: pointer;
+  @media (max-width: $mobail) {
+    right: 12px;
+    top: 17px;
+  }
 }
 
 .shipping-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  @media (max-width: $tablet) {
+    flex: none;
+  }
 }
+
 .choice-button-blok {
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
+  @media (max-width: $mobail) {
+    padding-top: 0px;
+  }
 }
-.choice-card__quantity {
-  color: #656565;
-  margin-left: 24px;
-  padding-left: 13px;
-}
+
 .choice-btn {
   color: #000000;
   font-weight: 300;
@@ -1026,6 +1127,13 @@ h3 {
   padding: 17px 40px;
   box-shadow: 2px 2px 2px 0px #b4b4b4;
   display: inline-block;
+  @media (max-width: $mobail) {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px 9px;
+    max-width: 175px;
+    text-align: center;
+  }
   &:hover {
     background-color: $coler-main;
     border-radius: 1px;
@@ -1041,13 +1149,26 @@ h3 {
 }
 .choice-form {
   margin-left: 128px;
+  max-width: 360px;
+  @media (max-width: $tablet) {
+    margin-left: 0px;
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    margin-top: 64px;
+  }
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
+
 .shipping-form {
   gap: 20px;
   &__field {
     box-sizing: border-box;
     padding: 12px;
-    width: 360px;
+    max-width: 360px;
     @include button-style;
   }
 }
@@ -1061,7 +1182,7 @@ h3 {
   font-size: 11px;
   line-height: 13px;
   color: #4a4a4a;
-  width: 102px;
+  max-width: 102px;
   &:hover {
     background-color: $coler-main;
     color: #ffffff;
@@ -1070,20 +1191,30 @@ h3 {
 }
 .choice-order {
   margin-top: 57px;
-  width: 360px;
+  max-width: 360px;
   height: 240px;
   background-color: #f5f3f3;
   display: flex;
   flex-direction: column;
   padding-top: 40px;
+  width: 100%;
+  @media (max-width: $tablet) {
+    margin-top: 0px;
+    height: 214px;
+    flex: none;
+    margin-bottom: 15px;
+  }
+  @media (max-width: $tablet) {
+    margin-bottom: 0px;
+  }
   &-btn {
     text-align: center;
-    margin: 17px 44px 42px 44px;
+    margin: 0px 44px 0px 44px;
     padding: 16px 43px;
     border: none;
     background-color: $coler-main;
     color: #ffffff;
-    width: 275px;
+    max-width: 275px;
     &:hover {
       @include button-style;
       background-color: #ffffff;
@@ -1116,17 +1247,37 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 21px;
+
+  &-line {
+    margin-top: 21px;
+    margin-bottom: 17px;
+    fill: rgba(226, 226, 226, 1);
+  }
 }
 .registration-blok {
   display: flex;
   margin-top: 65px;
   margin-bottom: 96px;
   gap: 128px;
+  @media (max-width: $tablet) {
+    gap: 20px;
+  }
+  @media (max-width: $mobail) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+.choice-card__img {
+  @media (max-width: $mobail) {
+    max-height: 188px;
+  }
 }
 fieldset {
   border: none;
   width: 360px;
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }
 .regform-name {
   color: #222222;
@@ -1169,7 +1320,7 @@ fieldset {
   font-size: 13px;
   line-height: 16px;
   color: #b1b1b1;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 39px;
 }
 .reg-btn {
@@ -1184,6 +1335,7 @@ fieldset {
   line-height: 17px;
   border: none;
   border: 1px solid $coler-main;
+  cursor: pointer;
 
   &-svg {
     margin-left: 20px;
@@ -1201,7 +1353,11 @@ fieldset {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 22px;
+  margin-bottom: 32px;
+  @media (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 .advantage-text {
   color: #000000;
@@ -1209,6 +1365,10 @@ fieldset {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 22px;
+  @media (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 .advantage-list {
   list-style: none;
@@ -1219,6 +1379,12 @@ fieldset {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 16px;
+  display: flex;
+  @media (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
   &::before {
     content: url(../img/reg-tab.svg);
     margin-right: 23px;
