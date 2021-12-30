@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brand</title>
+    <title>Товар</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
     ></script>
   </head>
 
-  <body>
+  <body class="page">
     <!-- шапка начало -->
     <header class="header">
       <div class="header-meny container">
@@ -162,193 +162,115 @@
       </div>
     </header>
     <!-- шапка конец  -->
-    <main>
-      <section class="top">
-        <div class="top-container container">
-          <div class="top-container-text">
-            <img class="top-line" src="img/top_line.png" alt="line" />
-            <div class="top-blok-text">
-              <h1 class="top-text">
-                <span class="text-900">THE BRAND</span><br />
-                <span class="text-700"
-                  >OF LUXERIOUS <span class="top-text-ping">FASHION</span></span
-                >
-              </h1>
-            </div>
-          </div>
+    <main class="main">
+      <section class="top-nav">
+        <h1 class="text-none">Корзина клиента</h1>
+        <div class="top-nav-centr container">
+          <p class="top-nav-heiding">SHOPPING CART</p>
         </div>
       </section>
-      <section class="centr container">
-        <h2 class="text-none">Ссылки на категории</h2>
-        <div class="centr-top">
-          <a class="link-stayl-none link-stayl-none-blok" href="#">
-            <div class="centr-blok blok1">
-              <span class="centr-blok-text"
-                ><span class="centr-blok-text-top">30% OFF</span><br /><span
-                  class="centr-blok-text-botton"
-                  >FOR WOMEN</span
-                ></span
-              >
+      <section class="choice-container container">
+        <h2 class="text-none">Выбор товара</h2>
+        <section class="choice">
+          <div class="choice-card">
+            <img class="choice-card__img" src="img/home3-tab.png" alt="home3" />
+            <div class="choice-card__blok">
+              <h3 class="choice__name">MANGO PEOPLE T-SHIRT</h3>
+              <p class="choice-card__item">
+                Price: <span class="choice-card__item_price">$300</span>
+              </p>
+              <p class="choice-card__item">Color: Red</p>
+              <p class="choice-card__item">Size: Xl</p>
+              <p class="choice-card__item">
+                Quantity:
+                <input
+                  value="1"
+                  min="1"
+                  max="10"
+                  class="choice-card__quantity"
+                  type="number"
+                />
+              </p>
             </div>
-          </a>
-          <a class="link-stayl-none link-stayl-none-blok" href="#">
-            <div class="centr-blok blok2">
-              <span class="centr-blok-text"
-                ><span class="centr-blok-text-top">HOT DEAL</span><br /><span
-                  class="centr-blok-text-botton"
-                  >FOR MEN</span
-                ></span
-              >
-            </div>
-          </a>
-          <a class="link-stayl-none link-stayl-none-blok" href="#">
-            <div class="centr-blok blok3">
-              <span class="centr-blok-text"
-                ><span class="centr-blok-text-top">NEW ARRIVALS</span
-                ><br /><span class="centr-blok-text-botton"
-                  >FOR KIDS</span
-                ></span
-              >
-            </div>
-          </a>
-          <a class="link-stayl-none link-stayl-none-blok4" href="#">
-            <div class="centr-blok blok4">
-              <span class="centr-blok-text"
-                ><span class="centr-blok-text-top">LUXIROUS & TRENDY</span
-                ><br /><span class="centr-blok-text-botton"
-                  >ACCESORIES</span
-                ></span
-              >
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="goods-home container">
-        <h2 class="text-centr">Fetured Items</h2>
-        <p class="goods-home-text text-centr">
-          Shop for items based on what we featured in this week
-        </p>
-        <div class="goods-3bloka">
-          <div class="goods-home-blok">
-            <div class="goods-home-kart">
-              <div class="home-cart-hover">
-                <div class="card__overlay">
-                  <button class="card__btn">Add to Cart</button>
-                </div>
-                <img class="home1-foto" src="img/home1.png" alt="home1" />
-              </div>
-              <a class="goods-home-h3-link link-stayl-none" href="product.html"
-                ><h3 class="goods-home-h3">ELLERY X M'O CAPSULE</h3>
-                <p class="goods-text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <p class="goods-price">$52.00</p></a
-              >
-            </div>
+            <button class="card__close">X</button>
           </div>
-          <div class="goods-home-blok">
-            <div class="goods-home-kart">
-              <video
-                class="video-promo"
-                width="360"
-                height="420"
-                src="video/Suslik_oret-spaces.im.mp4"
-                controls="controls"
-                poster="img/video.jpg"
-              ></video>
-              <a class="goods-home-h3-link link-stayl-none" href="product.html"
-                ><h3 class="goods-home-h3">ELLERY X M'O CAPSULE</h3>
-                <p class="goods-text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <p class="goods-price">$52.00</p></a
-              >
+          <div class="choice-card">
+            <img class="choice-card__img" src="img/home7-tab.png" alt="home7" />
+            <div class="choice-card__blok">
+              <h3 class="choice__name">MANGO PEOPLET-SHIRT</h3>
+              <p class="choice-card__item">
+                Price: <span class="choice-card__item_price">$300</span>
+              </p>
+              <p class="choice-card__item">Color: Red</p>
+              <p class="choice-card__item">Size: Xl</p>
+              <p class="choice-card__item">
+                Quantity:
+                <input
+                  value="1"
+                  min="1"
+                  max="10"
+                  class="choice-card__quantity"
+                  type="number"
+                />
+              </p>
             </div>
+            <button class="card__close">X</button>
           </div>
-          <div class="goods-home-blok">
-            <div class="goods-home-kart">
-              <div class="home-cart-hover">
-                <div class="card__overlay">
-                  <button class="card__btn">Add to Cart</button>
-                </div>
-                <img class="home1-foto" src="img/home3.png" alt="home3" />
-              </div>
-              <a class="goods-home-h3-link link-stayl-none" href="product.html"
-                ><h3 class="goods-home-h3">ELLERY X M'O CAPSULE</h3>
-                <p class="goods-text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <p class="goods-price">$52.00</p></a
-              >
-            </div>
+          <div class="choice-button-blok">
+            <button class="choice-btn">CLEAR SHOPPING CART</button>
+            <a class="choice-btn link-stayl-none" href="catalog.html"
+              >CONTINUE SHOPPING</a
+            >
           </div>
-          <div class="goods-home-blok">
-            <div class="goods-home-kart">
-              <div class="home-cart-hover">
-                <div class="card__overlay">
-                  <button class="card__btn">Add to Cart</button>
-                </div>
-                <img class="home1-foto" src="img/home4.png" alt="home4" />
-              </div>
-              <a class="goods-home-h3-link link-stayl-none" href="product.html"
-                ><h3 class="goods-home-h3">ELLERY X M'O CAPSULE</h3>
-                <p class="goods-text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <p class="goods-price">$52.00</p></a
+        </section>
+        <div class="choice-form">
+          <form action="#" class="shipping-form">
+            <p class="shipping-form-text">SHIPPING ADRESS</p>
+            <input
+              type="text"
+              class="shipping-form__field"
+              placeholder="Bangladesh"
+              disabled
+            />
+            <input
+              type="text"
+              class="shipping-form__field"
+              placeholder="State"
+            />
+            <input
+              type="text"
+              class="shipping-form__field"
+              placeholder="Postcode / Zip"
+            />
+            <input
+              type="submit"
+              class="shipping-form__button"
+              value="GET A QUOTE"
+            />
+          </form>
+          <div class="choice-order">
+            <p class="choice-order-text choice-order-text-min">
+              SUB TOTAL &emsp; $900
+            </p>
+            <p class="choice-order-text choice-order-text-big">
+              GRAND TOTAL&emsp;
+              <span class="choice-order-text-price">$900</span>
+            </p>
+
+            <div class="choice-centr">
+              <svg
+                class="choice-centr-line"
+                width="275"
+                height="1"
+                viewBox="0 0 275 1"
+                xmlns="http://www.w3.org/2000/svg"
               >
-            </div>
-          </div>
-          <div class="goods-home-blok">
-            <div class="goods-home-kart">
-              <div class="home-cart-hover">
-                <div class="card__overlay">
-                  <button class="card__btn">Add to Cart</button>
-                </div>
-                <img class="home1-foto" src="img/home5.png" alt="home5" />
-              </div>
-              <a class="goods-home-h3-link link-stayl-none" href="product.html"
-                ><h3 class="goods-home-h3">ELLERY X M'O CAPSULE</h3>
-                <p class="goods-text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <p class="goods-price">$52.00</p></a
-              >
-            </div>
-          </div>
-          <div class="goods-home-blok">
-            <div class="goods-home-kart">
-              <div class="home-cart-hover">
-                <div class="card__overlay">
-                  <button class="card__btn">Add to Cart</button>
-                </div>
-                <img class="home1-foto" src="img/home6.png" alt="home6" />
-              </div>
-              <a class="goods-home-h3-link link-stayl-none" href="product.html"
-                ><h3 class="goods-home-h3">ELLERY X M'O CAPSULE</h3>
-                <p class="goods-text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <p class="goods-price">$52.00</p></a
-              >
+                <path d="M275 0H0V1H275V0Z" />
+              </svg>
+              <button class="choice-order-btn">PROCEED TO CHECKOUT</button>
             </div>
           </div>
         </div>
-        <a href="catalog.html" class="goods-button link-stayl-none"
-          >Browse All Product</a
-        >
       </section>
       <section class="offer">
         <h2 class="text-none">С нами выгодно</h2>
@@ -398,8 +320,6 @@
               <input
                 class="subscribe-field"
                 type="email"
-                minlength="3"
-                maxlength="25"
                 placeholder="Enter Your Email"
                 required
               />
